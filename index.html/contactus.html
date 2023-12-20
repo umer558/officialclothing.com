@@ -1,0 +1,113 @@
+<title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000000;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <section>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script>
+    // You can add JavaScript for form submission and validation here
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      // Add your logic for form submission, e.g., sending data to a server
+      // For a simple example, prevent the default form submission behavior
+      event.preventDefault();
+      alert("Form submitted!");
+    });
+  </script>
+
+</body>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #000000; /* Set the background color to black */
+      color: #ffffff; /* Set text color to white */
+      margin: 0;
+      padding: 0;
+  }
+
+  footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #000000;
+      color: #fff;
+  }
+
+  h5 {
+      color: #fff; /* Set heading text color to white */
+  }
+
+  p {
+      margin: 0; /* Remove default margin for <p> */
+  }
+</style>
+
+<footer>
+  <h5>&copy; 2023 Your Company. All rights reserved. | Powered by Official Clothing</h5>
+</footer>
+</html>
